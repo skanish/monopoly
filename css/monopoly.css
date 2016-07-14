@@ -59,6 +59,12 @@ body{
     background-image: url(../images/jail.jpg);
 }
 
+/*Shai's Additions'*/
+.jailed {
+    background-image: url(../images/jailSad.jpg);
+    background-size:contain;
+    background-position:center;
+}
 
 .board .game.cell.free-parking{
     background-image: url(../images/parking.png);
@@ -161,7 +167,7 @@ body{
     vertical-align: top;
 }
 
-.players-placeholer{
+.players-placeholder{
     width: 100%;
     height: 100%;
 }
@@ -205,6 +211,12 @@ body{
     background-position:center;
 }
 
+.cell .player.smile {
+    background-image: url(../images/smile.png);
+    background-size:contain;
+    background-position:center;
+}
+
 .board .dice.cell{
     background-color:white;
 }
@@ -214,7 +226,7 @@ body{
     width: 25%;
     height: 25%;
     margin: 4%;
-    background-color: black;
+    background-color: #364c9c;
     border-radius: 100px;
     opacity:0;
 }
@@ -222,3 +234,4 @@ body{
 .dice-dot.right{
     margin-left:36%;
 }
+
