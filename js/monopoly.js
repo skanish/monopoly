@@ -45,7 +45,6 @@ Monopoly.updatePlayersMoney = function(player,amount){
     playersMoney -= amount;
     if (playersMoney < 0 ){
         Monopoly.showPopup("broke");
-        // alert("you are broke!")
     }
     player.attr("data-money",playersMoney);
     player.attr("title",player.attr("id") + ": $" + playersMoney);
@@ -299,9 +298,6 @@ Monopoly.handleAction = function(player,action,amount){
 };
 
 
-
-
-
 Monopoly.createPlayers = function(numOfPlayers){
     var startCell = $(".go");
     for (var i=1; i<= numOfPlayers; i++){
@@ -336,7 +332,7 @@ Monopoly.isValidInput = function(validate,value){
     var isValid = false;
     switch(validate){
         case "numofplayers":
-            if(value > 1 && value <= 4){
+            if(value > 1 && value <= 6){
                 isValid = true;
             }
             break;

@@ -205,12 +205,23 @@ body{
     background-color: #d061cd;
 }
 
+/*Shai's Additions*/
+
+.player#player5 , .player5.cell .content{
+    background-color: orangered;
+}
+
+.player#player6 , .player6.cell .content{
+    background-color: yellow;
+}
+
 .player.current-turn{
     background-image:url(../images/crown.png);
     background-size:contain;
     background-position:center;
 }
 
+/*Shai's Additions*/
 .cell .player.smile {
     background-image: url(../images/smile.png);
     background-size:contain;
